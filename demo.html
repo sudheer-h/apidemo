@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //usage of var function level scoping
+        for(var a=0;a<5;a++){
+            console.log(a);
+        }
+        console.log("<br>");
+        //usage of let block level scoping
+        console.log(a);
+        for(let b=0;b<5;b++){
+            console.log(b);
+        }
+        //console.log(b)
+        const c="sudheer"
+        //c=143
+        console.log(c)
+        //redeclaration in var
+        var d=23;
+        var d="cvr"
+        console.log(d);
+        //reintitialization in var
+        var e=123
+        e=132
+        console.log(e)
+        //redeclaration is not possible in let
+        let f='vardhan'
+        //let f=123
+        //reinitializaton in possible in let
+        let g=1234
+        g="sudheer"
+        </script>
+</body>
+</html>
